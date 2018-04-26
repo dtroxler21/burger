@@ -19,7 +19,7 @@
 <ul>
   {{#each burgers}}
     {{#if devoured}}
-	<button class="switchDevoured" data-id="{{id}}" data-newdevour="{{devoured}}">
+	<button class="devour" data-id="{{id}}" data-devour="{{devoured}}">
 		Devour!
 	</button>
     {{/if}}
@@ -29,9 +29,9 @@
 <h2>Add a Burger</h2>
 <form class="create-form">
 
-  <div class="form-group">
-    <label for="bn">Burger Name:</label>
-    <input type="text" id="bn" name="burgerName">
+  <div>
+    <label for="ca">Burger Name:</label>
+    <input type="text" id="ca" name="name">
   </div>
 
   <button type="submit">Add Burger</button>
